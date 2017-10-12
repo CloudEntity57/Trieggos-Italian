@@ -1,0 +1,478 @@
+.menu {
+  height: 150vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.menu * {
+  opacity: 0;
+}
+
+.menu .menu_title {
+  font-family: 'Great Vibes',cursive;
+  font-weight: bold;
+  font-size: 3em;
+  padding-top: 1.5em;
+  text-align: center;
+  transition: transform .25s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.menu .menu_title .dash {
+  font-family: 'Arial',sans-serif;
+  font-size: .5em;
+  font-weight: normal;
+  color: #b7a15f;
+}
+
+.menu .menu_subtitle {
+  text-align: center;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 1.2em;
+  color: #b9b7b7;
+  padding-top: 2.5em;
+  transition: transform .25s;
+  -webkit-transition: transform .25s;
+}
+
+.menu .menu_main {
+  padding: 1.5em 1em;
+  width: 60vw;
+  margin: auto;
+  position: relative;
+  opacity: 1;
+}
+
+.menu .menu_col {
+  padding-top: 1.5em;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-left: 1em;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  transition: transform .25s;
+  -webkit-transition: transform .25s;
+}
+
+.menu #menu_col1, .menu #menu_col2, .menu #menu_subtitle1 {
+  margin-top: 75px;
+  -webkit-transition-property: margin-top;
+  transition-property: margin-top;
+}
+
+.menu .moved_up {
+  margin-top: 0px !important;
+}
+
+.menu .menu_item {
+  padding: 0px 20px;
+}
+
+.menu .menu_item .menu_item_title {
+  padding-bottom: 1em;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 1em;
+}
+
+.menu .menu_item .menu_item_description {
+  display: inline-block;
+  width: 80%;
+  font-size: .85em;
+  color: gray;
+}
+
+.menu .menu_item .menu_item_price {
+  display: inline-block;
+  width: 20%;
+  font-family: 'Great Vibes',cursive;
+  font-size: 3.75em;
+  color: #b7a15f;
+}
+
+.menu .menu_item .dollars {
+  font-size: 1.25em;
+}
+
+.displaying *, .displaying {
+  opacity: 1;
+}
+
+.cornucopia {
+  height: 85vh;
+  width: 100vw;
+  background-image: url("./images/Pomodori.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header_bkg {
+  height: 100vh;
+}
+
+.cornucopia_opacity {
+  height: 85vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+}
+
+.site_title {
+  margin: auto;
+  position: absolute;
+  top: 30vh;
+}
+
+.site_title .restaurant_name, .site_title .restaurant_subtitle {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  transition: transform .25s;
+}
+
+.site_title .restaurant_name {
+  font-size: 8.5em;
+  font-family: 'Great Vibes',cursive;
+  margin-top: .5em;
+  opacity: 0;
+  transition-property: margin-top, opacity;
+}
+
+.site_title .restaurant_subtitle {
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 2.5em;
+  position: absolute;
+  top: 4em;
+  margin-top: 2em;
+  opacity: 0;
+  transition-property: margin-top, opacity;
+}
+
+.site_title .restaurant_name_repositioned {
+  opacity: 1;
+  margin-top: 0em;
+}
+
+.cream_divider {
+  height: 50vh;
+  width: 100vw;
+  background-color: #f6f4f1;
+  position: relative;
+}
+
+.about {
+  position: absolute;
+  left: 16.5vw;
+  width: 66vw;
+  height: 60vh;
+  top: -5vh;
+  z-index: 2;
+}
+
+.about h1 {
+  font-family: 'Italianno',cursive;
+}
+
+.about_col {
+  height: 50%;
+  position: relative;
+}
+
+.about_col > div {
+  display: inline-block;
+  position: absolute;
+  margin-top: 3em;
+  opacity: 0;
+  text-align: center;
+  height: 100%;
+  padding: 15px 25px;
+  transition: transform .25s;
+  transition-property: margin-top, opacity;
+}
+
+.about_col > div p {
+  font-size: .85em;
+  font-family: 'Arial', sans-serif;
+  color: gray;
+}
+
+.about_col > div * {
+  height: 30%;
+}
+
+.about_box_animate_up {
+  margin-top: 0em !important;
+  opacity: 1 !important;
+}
+
+.about_header {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Italianno',cursive;
+}
+
+.about_1 {
+  width: 33.33%;
+  background-color: #fff;
+  left: 0px;
+}
+
+.about_2 {
+  width: 66.66%;
+  background-image: url("./images/Empty+Patio.jpg");
+  background-size: cover;
+  right: 0px;
+}
+
+.about_3 {
+  width: 33.33%;
+  background-image: url("./images/pellegrino.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -45px;
+  left: 0px;
+}
+
+.about_4 {
+  width: 66.66%;
+  background-color: #fff;
+  right: 0px;
+}
+
+.book_btn {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.our_specialties {
+  height: 40vh;
+  transition: transform .5s;
+  overflow: hidden !important;
+  transition-property: height;
+}
+
+.our_specialties .specialties_parallax {
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+
+.our_specialties .specialties_parallax .specialties_opacity {
+  height: 60vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: .5;
+}
+
+.our_specialties_expanded {
+  height: 60vh;
+}
+
+.our_specialties_text {
+  width: 100vw;
+  font-family: 'Ubuntu',sans-serif;
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: 5.5em;
+}
+
+.cream_divider2 {
+  height: 265px;
+  width: 100vw;
+  background-color: #f6f4f1;
+  position: relative;
+}
+
+.specialties_header, .specialties_price {
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.specialties_header div {
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.specialties_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.specialties_price {
+  padding-top: 1em;
+  color: #b7a15f;
+}
+
+.about2 {
+  position: absolute;
+  left: 16.5vw;
+  width: 66vw;
+  height: 60vh;
+  top: -5vh;
+  z-index: 2;
+}
+
+.about2 h1 {
+  font-family: 'Italianno',cursive;
+}
+
+.about_col2 {
+  height: 40%;
+  position: relative;
+}
+
+.about_col2 > div {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  width: 25%;
+  text-align: center;
+  height: 100%;
+  transition: transform .25s;
+}
+
+.about_col2 > div p {
+  font-size: .85em;
+  font-family: 'Arial', sans-serif;
+  color: gray;
+  padding-top: .5em;
+}
+
+.about_col2 > div * {
+  height: 30%;
+}
+
+.about_col2 > div > div {
+  position: relative;
+  height: 100%;
+}
+
+.about_5 .inner, .about_7 .inner, .about_10 .inner, .about_12 .inner {
+  background-color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about_5 .inner, .about_6 .inner, .about_7 .inner, .about_8 .inner {
+  opacity: 0;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.inner_repositioned {
+  left: 0px !important;
+  bottom: 0px !important;
+  transition: transform .65s;
+  transition-property: left, bottom, opacity;
+  opacity: 1 !important;
+}
+
+.about_5 .inner {
+  left: -35%;
+  bottom: 35%;
+}
+
+.about_6 {
+  left: 25%;
+}
+
+.about_6 .inner {
+  background-image: url(./images/baricole.jpeg);
+  bottom: -35%;
+}
+
+.about_7 {
+  left: 50%;
+}
+
+.about_7 .inner {
+  right: -35%;
+  bottom: 35%;
+}
+
+.about_8 {
+  left: 75%;
+}
+
+.about_8 .inner {
+  background-image: url(./images/spaghetti.jpg);
+  bottom: -35%;
+}
+
+.about_9 .inner {
+  background-image: url(./images/lasagna.jpg);
+}
+
+.about_10 {
+  left: 25%;
+}
+
+.about_11 {
+  left: 50%;
+}
+
+.about_11 .inner {
+  background-image: url(./images/eggplant.jpg);
+}
+
+.about_12 {
+  left: 75%;
+}
+
+.table_view {
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+}
+
+.table_view_parallax {
+  height: 100vh;
+  z-index: 60000000000;
+}
+
+.pizza {
+  position: absolute;
+  top: 100px;
+  z-index: 50000;
+  width: 200px;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition: all .65s;
+}
+
+.fusilli {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 150px;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition: all .65s;
+}
+
+.uncooked_pasta {
+  position: absolute;
+  top: 750px;
+  right: 0px;
+  width: 200px;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition: all .65s;
+}

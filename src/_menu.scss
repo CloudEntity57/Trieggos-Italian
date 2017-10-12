@@ -1,0 +1,88 @@
+
+.menu{
+  height:150vh;
+  background-color:#fff;
+  position: relative;
+  *{
+    opacity:0;
+  }
+  .menu_title{
+    font-family:'Great Vibes',cursive;
+    font-weight:bold;
+    font-size:3em;
+    padding-top:1.5em;
+    text-align:center;
+    transition: transform .25s;
+    -webkit-transition-property:opacity;
+    transition-property:opacity;
+    .dash{
+      font-family:'Arial',sans-serif;
+      font-size:.5em;
+      font-weight:normal;
+      color: #b7a15f;
+    }
+  }
+  .menu_subtitle{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size:1.2em;
+    color:#b9b7b7;
+    padding-top:2.5em;
+    transition: transform .25s;
+    -webkit-transition: transform .25s;
+  }
+  .menu_main{
+    padding: 1.5em 1em;
+    width:60vw;
+    margin:auto;
+    position: relative;
+    opacity:1;
+    // min-height: 30vh;
+  }
+  .menu_col{
+    padding-top:1.5em;
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding-left:1em;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    transition: transform .25s;
+    -webkit-transition: transform .25s;
+  }
+  #menu_col1, #menu_col2,#menu_subtitle1{
+    margin-top:75px;
+    -webkit-transition-property: margin-top;
+    transition-property: margin-top;
+  }
+  .moved_up{
+    margin-top:0px !important;
+  }
+  .menu_item{
+    padding:0px 20px;
+    .menu_item_title{
+      padding-bottom:1em;
+      font-family:'Ubuntu',sans-serif;
+      font-size:1em;
+    }
+    .menu_item_description{
+      display:inline-block;
+      width:80%;
+      font-size:.85em;
+      color:gray;
+    }
+    .menu_item_price{
+      display:inline-block;
+      width:20%;
+      font-family:'Great Vibes',cursive;
+      font-size:3.75em;
+      color:#b7a15f;
+    }
+    .dollars{
+      font-size:1.25em;
+    }
+  }
+}
+.displaying *, .displaying{
+  opacity:1;
+}
