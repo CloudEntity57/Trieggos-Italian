@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './components/Menu';
+import Nav from './components/Nav';
 import jquery from 'jquery';
 import './App.css';
 
@@ -68,7 +69,7 @@ class App extends Component {
         transform_delay(five_inner ,450, ' inner_repositioned');
       }
       //animate up the menu:
-      if(scrollTop() > 1800){
+      if(scrollTop() > 1650){
         transform_delay(menu_title,250,' displaying');
         transform_delay(menu_subtitle1,450,' displaying');
         transform_delay(menu_subtitle1,450,' moved_up');
@@ -89,6 +90,7 @@ class App extends Component {
     return (
       <div className="trieggos">
         <header className="cornucopia">
+          <Nav />
           <div className="header_bkg"></div>
           <div className="cornucopia_opacity"></div>
           <div className="site_title">

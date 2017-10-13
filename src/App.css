@@ -99,6 +99,43 @@
   opacity: 1;
 }
 
+.navigation {
+  position: absolute;
+  width: 100vw;
+  top: 20px;
+  height: 5em;
+  background-color: transparent;
+  color: white;
+  z-index: 50000000000;
+}
+
+.navigation .restaurant_logo {
+  font-family: 'Great Vibes',cursive;
+  position: absolute;
+  left: 10px;
+  font-size: 2.5em;
+  top: -10px;
+}
+
+.navigation ul {
+  float: right;
+}
+
+.navigation ul li:nth-child(4) {
+  list-style: none !important;
+}
+
+.navigation ul li {
+  float: right;
+  margin-right: 3em;
+  cursor: pointer;
+}
+
+.navigation ul li:hover {
+  color: lightgray;
+  transition: all .25s;
+}
+
 .cornucopia {
   height: 85vh;
   width: 100vw;
@@ -245,6 +282,20 @@
 
 .book_btn {
   font-family: 'Ubuntu', sans-serif;
+  border: 1px solid #825512;
+  color: #825512;
+  padding-top: .65em;
+  width: 85%;
+  height: 20% !important;
+  margin: auto;
+  margin-top: 1.65em;
+  cursor: pointer;
+}
+
+.book_btn:hover {
+  background-color: #af9e86;
+  color: white;
+  transition: all .5s;
 }
 
 .our_specialties {
@@ -403,7 +454,7 @@
 }
 
 .about_7 .inner {
-  right: -35%;
+  left: 35%;
   bottom: 35%;
 }
 
