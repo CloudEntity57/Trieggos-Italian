@@ -54,6 +54,10 @@
     margin-top:75px;
     -webkit-transition-property: margin-top;
     transition-property: margin-top;
+
+    @media(max-width: 600px){
+      width:100%;
+    }
   }
   .moved_up{
     margin-top:0px !important;
@@ -77,6 +81,9 @@
       font-family:'Great Vibes',cursive;
       font-size:3.75em;
       color:#b7a15f;
+        @media(max-width: 600px){
+          font-size:2em;
+        }
     }
     .dollars{
       font-size:1.25em;
@@ -85,4 +92,12 @@
 }
 .displaying *, .displaying{
   opacity:1;
+}
+#menu_section2 .menu_col{
+  @media(max-width: 600px){
+    width:100vw;
+    .menu_item_description{
+      width:50%;
+    }
+  }
 }

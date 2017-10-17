@@ -62,6 +62,12 @@
   transition-property: margin-top;
 }
 
+@media (max-width: 600px) {
+  .menu #menu_col1, .menu #menu_col2, .menu #menu_subtitle1 {
+    width: 100%;
+  }
+}
+
 .menu .moved_up {
   margin-top: 0px !important;
 }
@@ -91,6 +97,12 @@
   color: #b7a15f;
 }
 
+@media (max-width: 600px) {
+  .menu .menu_item .menu_item_price {
+    font-size: 2em;
+  }
+}
+
 .menu .menu_item .dollars {
   font-size: 1.25em;
 }
@@ -99,8 +111,18 @@
   opacity: 1;
 }
 
+@media (max-width: 600px) {
+  #menu_section2 .menu_col {
+    width: 100vw;
+  }
+  #menu_section2 .menu_col .menu_item_description {
+    width: 50%;
+  }
+}
+
 .navigation {
   position: absolute;
+  left: 0px;
   width: 100vw;
   top: 20px;
   height: 5em;
@@ -109,12 +131,24 @@
   z-index: 50000000000;
 }
 
+@media (max-width: 600px) {
+  .navigation {
+    top: 0px;
+  }
+}
+
 .navigation .restaurant_logo {
   font-family: 'Great Vibes',cursive;
   position: absolute;
   left: 10px;
   font-size: 2.5em;
   top: -10px;
+}
+
+@media (max-width: 600px) {
+  .navigation .restaurant_logo {
+    top: 15px;
+  }
 }
 
 .navigation ul {
@@ -134,6 +168,57 @@
 .navigation ul li:hover {
   color: lightgray;
   transition: all .25s;
+}
+
+@media (max-width: 600px) {
+  .navigation ul {
+    padding-top: 0em;
+    padding-left: 0em;
+    margin-right: 5em;
+  }
+  .navigation ul li {
+    float: none;
+    list-style: none;
+    height: 10vh;
+    width: 50vw;
+    padding-left: 1.5em;
+    line-height: 4em;
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation .nav_mobile, .navigation .nav_mobile_opacity {
+    display: none;
+    width: 50vw;
+  }
+}
+
+.navigation .nav_mobile_btn {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 10vw;
+  display: inline-block;
+  color: #fff;
+}
+
+.navigation .nav_mobile {
+  position: relative;
+}
+
+.navigation .nav_mobile_opacity {
+  background-color: black;
+  opacity: .5;
+  height: 100%;
+  right: 0px;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .navigation .nav_full {
+    display: none;
+  }
 }
 
 .cornucopia {
@@ -179,6 +264,12 @@
   transition-property: margin-top, opacity;
 }
 
+@media (max-width: 600px) {
+  .site_title .restaurant_name {
+    font-size: 6.5em;
+  }
+}
+
 .site_title .restaurant_subtitle {
   font-family: 'Ubuntu',sans-serif;
   font-size: 2.5em;
@@ -187,6 +278,12 @@
   margin-top: 2em;
   opacity: 0;
   transition-property: margin-top, opacity;
+}
+
+@media (max-width: 600px) {
+  .site_title .restaurant_subtitle {
+    font-size: 2em;
+  }
 }
 
 .site_title .restaurant_name_repositioned {
@@ -199,6 +296,12 @@
   width: 100vw;
   background-color: #f6f4f1;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .cream_divider {
+    height: 150vh;
+  }
 }
 
 .about {
@@ -214,9 +317,56 @@
   font-family: 'Italianno',cursive;
 }
 
+@media (max-width: 600px) {
+  .about {
+    top: 0;
+    position: relative;
+    width: 100vw;
+    left: 0px;
+    height: 100vh;
+  }
+}
+
 .about_col {
   height: 50%;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .about_col {
+    height: 75vh;
+  }
+  .about_col .about_1 {
+    height: 50vh;
+  }
+  .about_col .about_2 {
+    height: 25vh;
+  }
+  .about_col .about_3 {
+    height: 25vh;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .about_col .about_3 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about_col .about_4 {
+    height: 50vh;
+    position: absolute;
+    top: 0px;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .about_col .about_4 {
+    height: 75vh;
+  }
 }
 
 .about_col > div {
@@ -229,6 +379,13 @@
   padding: 15px 25px;
   transition: transform .25s;
   transition-property: margin-top, opacity;
+}
+
+@media (max-width: 600px) {
+  .about_col > div {
+    width: 100%;
+    position: relative;
+  }
 }
 
 .about_col > div p {
@@ -298,6 +455,12 @@
   transition: all .5s;
 }
 
+@media (max-width: 600px) {
+  .book_btn {
+    padding-top: 1.25em;
+  }
+}
+
 .our_specialties {
   height: 40vh;
   transition: transform .5s;
@@ -318,8 +481,20 @@
   opacity: .5;
 }
 
+@media (max-width: 600px) {
+  .our_specialties {
+    height: 20vh;
+  }
+}
+
 .our_specialties_expanded {
   height: 60vh;
+}
+
+@media (max-width: 600px) {
+  .our_specialties_expanded {
+    height: 20vh;
+  }
 }
 
 .our_specialties_text {
@@ -331,11 +506,37 @@
   top: 5.5em;
 }
 
+@media (max-width: 600px) {
+  .our_specialties_text {
+    top: .5em;
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}
+
+.menu {
+  overflow: hidden;
+}
+
 .cream_divider2 {
   height: 265px;
   width: 100vw;
   background-color: #f6f4f1;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .cream_divider2 {
+    height: 100vh;
+  }
+  .cream_divider2 .about_5, .cream_divider2 .about_7, .cream_divider2 .about_10, .cream_divider2 .about_12 {
+    height: 25vh;
+    width: 100vw;
+    left: 0px;
+  }
+  .cream_divider2 .about_6, .cream_divider2 .about_8, .cream_divider2 .about_9, .cream_divider2 .about_11 {
+    display: none;
+  }
 }
 
 .specialties_header, .specialties_price {
@@ -376,9 +577,23 @@
   font-family: 'Italianno',cursive;
 }
 
+@media (max-width: 600px) {
+  .about2 {
+    left: 0px;
+    height: 100vh;
+    top: 0px;
+  }
+}
+
 .about_col2 {
   height: 40%;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .about_col2 {
+    height: 50vh;
+  }
 }
 
 .about_col2 > div {
@@ -405,6 +620,12 @@
 .about_col2 > div > div {
   position: relative;
   height: 100%;
+}
+
+@media (max-width: 600px) {
+  .about_col2 > div {
+    position: relative;
+  }
 }
 
 .about_5 .inner, .about_7 .inner, .about_10 .inner, .about_12 .inner {
@@ -493,6 +714,12 @@
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .table_view {
+    display: none;
+  }
+}
+
 .table_view_parallax {
   height: 100vh;
   z-index: 60000000000;
@@ -518,6 +745,12 @@
   transition: all .65s;
 }
 
+@media (max-width: 600px) {
+  .pizza, .fusilli, .uncooked_pasta {
+    width: 20vw;
+  }
+}
+
 .uncooked_pasta {
   position: absolute;
   top: 750px;
@@ -526,4 +759,16 @@
   transition-property: opacity;
   -webkit-transition-property: opacity;
   transition: all .65s;
+}
+
+@media (max-width: 600px) {
+  .uncooked_pasta {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu_col .menu_item {
+    width: 100%;
+  }
 }

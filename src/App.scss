@@ -2,18 +2,25 @@ $header:85vh;
 @import 'menu';
 .navigation{
   position: absolute;
+  left:0px;
   width:100vw;
   top:20px;
   height:5em;
   background-color: transparent;
   color:white;
   z-index: 50000000000;
+  @media(max-width: 600px){
+    top:0px;
+  }
   .restaurant_logo{
     font-family: 'Great Vibes',cursive;
     position: absolute;
     left:10px;
     font-size: 2.5em;
     top:-10px;
+    @media(max-width: 600px){
+      top:15px;
+    }
   }
   ul{
     float:right;
@@ -28,6 +35,50 @@ $header:85vh;
         color:lightgray;
         transition: all .25s;
       }
+    }
+      @media(max-width: 600px){
+        padding-top:0em;
+        padding-left: 0em;
+        margin-right:5em;
+        li{
+          float:none;
+          list-style: none;
+          height:10vh;
+          width:50vw;
+          padding-left:1.5em;
+          line-height: 4em;
+        }
+      }
+  }
+
+  .nav_mobile,.nav_mobile_opacity{
+    @media(min-width: 600px){
+      display: none;
+      width:50vw;
+    }
+  }
+  .nav_mobile_btn{
+    position: absolute;
+    right:15px;
+    top:0px;
+    width:10vw;
+    display: inline-block;
+    color:#fff;
+  }
+  .nav_mobile{
+    position: relative;
+  }
+  .nav_mobile_opacity{
+    background-color:black;
+    opacity: .5;
+    height:100%;
+    right:0px;
+    width:100%;
+    position: absolute;
+  }
+  .nav_full{
+    @media(max-width: 600px){
+      display: none;
     }
   }
 }
@@ -66,6 +117,9 @@ $header:85vh;
     margin-top:.5em;
     opacity:0;
     transition-property:margin-top, opacity;
+      @media(max-width: 600px){
+        font-size:6.5em;
+      }
   }
   .restaurant_subtitle{
     font-family:'Ubuntu',sans-serif;
@@ -75,6 +129,9 @@ $header:85vh;
     margin-top:2em;
     opacity:0;
     transition-property:margin-top, opacity;
+      @media(max-width: 600px){
+        font-size: 2em;
+      }
   }
   .restaurant_name_repositioned{
     opacity:1;
@@ -86,6 +143,9 @@ $header:85vh;
   width:100vw;
   background-color:#f6f4f1;
   position: relative;
+  @media(max-width:600px){
+    height:150vh;
+  }
 }
 .about{
   position:absolute;
@@ -97,10 +157,43 @@ $header:85vh;
   h1{
     font-family:'Italianno',cursive;
   }
+  @media(max-width:600px){
+    top:0;
+    position: relative;
+    width:100vw;
+    left:0px;
+    height:100vh;
+  }
 }
 .about_col{
   height:50%;
   position: relative;
+  @media(max-width:600px){
+    height:75vh;
+    .about_1{
+      height:50vh;
+    }
+    .about_2{
+      height:25vh;
+    }
+    .about_3{
+      height:25vh;
+      // display:none;
+      position: absolute;
+      bottom:0px;
+        @media(max-width: 600px){
+          display: none;
+        }
+    }
+    .about_4{
+      height:50vh;
+      position: absolute;
+      top:0px;
+        @media(max-width: 600px){
+          height:75vh;
+        }
+    }
+  }
 }
 .about_col>div{
   display:inline-block;
@@ -112,6 +205,10 @@ $header:85vh;
   padding:15px 25px;
   transition:transform .25s;
   transition-property:margin-top, opacity;
+  @media(max-width:600px){
+    width:100%;
+    position: relative;
+  }
   p{
     font-size: .85em;
     font-family: 'Arial', sans-serif;
@@ -173,6 +270,9 @@ $header:85vh;
     color:white;
     transition: all .5s;
   }
+    @media(max-width: 600px){
+      padding-top: 1.25em;
+    }
 }
 .our_specialties{
   height:40vh;
@@ -190,9 +290,18 @@ $header:85vh;
       opacity: .5;
     }
   }
+  @media(max-width: 600px){
+    // display: none;
+    height:20vh;
+  }
 }
 .our_specialties_expanded{
   height:60vh;
+
+  @media(max-width: 600px){
+    // display: none;
+    height:20vh;
+  }
 }
 .our_specialties_text{
   width:100vw;
@@ -201,14 +310,32 @@ $header:85vh;
   font-size:2.5em;
   position: absolute;
   top:5.5em;
+    @media(max-width: 600px){
+      top:.5em;
+      font-size: 2em;
+      margin-top:1em;
+    }
 }
-
+.menu{
+  overflow: hidden;
+}
 .cream_divider2{
   // height:38vh;
   height:265px;
   width:100vw;
   background-color:#f6f4f1;
   position: relative;
+  @media(max-width: 600px){
+    height:100vh;
+    .about_5,.about_7,.about_10,.about_12{
+      height:25vh;
+      width:100vw;
+      left:0px;
+    }
+    .about_6,.about_8,.about_9,.about_11{
+      display: none;
+    }
+  }
 }
 .specialties_header, .specialties_price{
   font-family: 'Ubuntu',sans-serif;
@@ -241,10 +368,18 @@ $header:85vh;
   h1{
     font-family:'Italianno',cursive;
   }
+  @media(max-width: 600px){
+    left:0px;
+    height:100vh;
+    top:0px;
+  }
 }
 .about_col2{
   height:40%;
   position: relative;
+  @media(max-width: 600px){
+    height:50vh;
+  }
 }
 .about_col2>div{
   display:inline-block;
@@ -267,6 +402,9 @@ $header:85vh;
   &>div{
     position: relative;
     height:100%;
+  }
+  @media(max-width: 600px){
+    position: relative;
   }
 }
 .about_5 .inner, .about_7 .inner, .about_10 .inner, .about_12 .inner{
@@ -345,6 +483,9 @@ $scale:35%;
   height:60vh;
   width:100vw;
   position: relative;
+  @media(max-width: 600px){
+    display:none;
+  }
   // background-image:url('./images/table-on-ten-bloomsville-new-york-tout.jpg');
 }
 .table_view_parallax{
@@ -370,6 +511,11 @@ $scale:35%;
   -webkit-transition-property:opacity;
   transition:all .65s;
 }
+.pizza,.fusilli,.uncooked_pasta{
+  @media(max-width: 600px){
+    width:20vw;
+  }
+}
 .uncooked_pasta{
   position: absolute;
   top:750px;
@@ -378,4 +524,16 @@ $scale:35%;
   transition-property:opacity;
   -webkit-transition-property:opacity;
   transition:all .65s;
+    @media(max-width: 600px){
+      width:20vw;
+    }
+}
+
+
+.menu_col{
+  @media(max-width: 600px){
+    .menu_item{
+      width:100%;
+    }
+  }
 }
