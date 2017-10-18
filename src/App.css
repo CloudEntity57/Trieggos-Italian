@@ -120,6 +120,10 @@
   }
 }
 
+.trieggos {
+  overflow: hidden;
+}
+
 .navigation {
   position: absolute;
   left: 0px;
@@ -129,6 +133,13 @@
   background-color: transparent;
   color: white;
   z-index: 50000000000;
+}
+
+.navigation .collapsed * {
+  height: 0px;
+  opacity: 0;
+  transition: all .25s;
+  transition-property: height,opacity;
 }
 
 @media (max-width: 600px) {
@@ -180,10 +191,19 @@
     float: none;
     list-style: none;
     height: 10vh;
-    width: 50vw;
+    width: 60vw;
     padding-left: 1.5em;
     line-height: 4em;
+    color: #fff;
+    z-index: 200;
+    text-align: right;
+    padding-right: 2em;
+    margin-right: 0px;
   }
+}
+
+.navigation .nav_clicked {
+  background-color: #000;
 }
 
 @media (min-width: 600px) {
@@ -196,14 +216,21 @@
 .navigation .nav_mobile_btn {
   position: absolute;
   right: 15px;
-  top: 0px;
+  top: 12px;
   width: 10vw;
-  display: inline-block;
+  display: block;
   color: #fff;
+}
+
+.navigation .nav_mobile_btn div {
+  font-size: 2.5em;
 }
 
 .navigation .nav_mobile {
   position: relative;
+  top: 10vh;
+  right: 0px;
+  margin-right: 0px;
 }
 
 .navigation .nav_mobile_opacity {
@@ -213,6 +240,7 @@
   right: 0px;
   width: 100%;
   position: absolute;
+  z-index: -1;
 }
 
 @media (max-width: 600px) {
